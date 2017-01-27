@@ -3,3 +3,376 @@
  * https://www.facebook.com/profile.php?id=100005683967607
  * https://vk.com/lubomyr_petrivnyk
  * l.petrivnyk@gmail.com */
+
+/* Global */
+
+h2, h3, h4, h5 {
+    font-family: "OpenSansBold";
+    color: #323232;
+    text-transform: uppercase;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    cursor: default;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 20px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 16px;
+}
+p {
+    font-family: "OpenSansLight";
+    font-size: 16px;
+    color: #919191;
+    line-height: 180%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    cursor: default;
+}
+
+/* Content */
+.content {
+    background: #ffffff;
+}
+
+/* Header */
+header {
+    background: url("../img/header.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 651px;
+}
+/* Header, Navigation*/
+header .navigation {
+    margin-top: 25px;
+}
+header .navigation .logo {
+    margin-left: 20px;
+    transition: .5s;
+}
+header .navigation .logo a {
+    cursor: default;
+}
+header .navigation .logo:hover{
+    -webkit-transform: rotateZ(-10deg);
+    -ms-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg);
+}
+header .navigation .social a{
+    color: #ffffff;
+}
+header .navigation .social .fa {
+    padding: 0 5px;
+    transition: .5s;
+}
+header .navigation .social .fa:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+/* Header, Slogan*/
+header .slogan {
+    text-transform: uppercase;
+    margin-top: 235px;
+    font-family: "OpenSansBold";
+}
+header .slogan .slogan_txt {
+    font-size: 36px;
+    color: #cb2e2e;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    cursor: default;
+}
+header .slogan .slogan_txt span{
+    color: #ffffff;
+}
+header .slogan .slogan_btn {
+    cursor: default;
+    margin-top: 30px;
+    height: 50px;
+    width: 195px;
+    border: 2px solid #ffffff;
+    background: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 24px;
+    border-radius: 3px;
+    transition: .5s;
+}
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+header .slogan .slogan_btn:hover {
+    border: 2px solid #cb2e2e;
+    -webkit-animation: swing .7s ease;
+    animation: swing .7s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    box-shadow:
+                1px 1px #be2f2f,
+                2px 2px #b42a2a;
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+}
+
+/* About Us */
+.about_us {
+    background: #f7f7f7;
+    height: 100%;
+    width: 100%;
+}
+.about_us .about_us_txt {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+/* Our History */
+.our_history {
+    height: 100%;
+    width: 100%;
+}
+.our_history .our_history_txt {
+    margin-top: 55px;
+    margin-bottom: 40px;
+}
+.our_history .our_history_txt p {
+    margin-top: 35px;
+}
+
+/* Our Skills */
+.our_skills {
+    height: 100%;
+    width: 100%;
+    background: #f7f7f7;
+}
+.our_skills .our_skills_txt {
+    margin-top: 60px;
+}
+.our_skills .progress_body {
+    margin-top: 55px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.our_skills .progress_body .progress_txt {
+    text-transform: uppercase;
+    color: #919191;
+    font-family: "OpenSansRegular";
+    font-size: 20px;
+    position: relative;
+}
+.our_skills .progress_body .html {
+    top: 150px;
+    left: 0;
+}
+.our_skills .progress_body .css {
+    top: 150px;
+    left: 0;
+}
+.our_skills .progress_body .wordpress {
+    top: 150px;
+    left: 0;
+}
+.our_skills .progress_body .seo {
+    top: 150px;
+    left: 0;
+}
+
+/* Our Team */
+.our_team {
+    width: 100%;
+    height: 100%;
+}
+.our_team .our_team_txt {
+    margin-top: 60px;
+}
+.our_team .our_team_people {
+    margin-top: 55px;
+    margin-bottom: 40px;
+}
+.our_team .our_team_people .social_icon {
+    margin-top: -30px;
+}
+.our_team .our_team_people .social_icon a {
+    color: #ff0000;
+}
+.our_team .our_team_people .people_txt {
+    font-family: "OpenSansLight";
+    font-size: 14px;
+    color: #919191;
+    text-transform: uppercase;
+}
+.our_team .our_team_people .social_icon .fa {
+    padding: 0 5px;
+    transition: .5s;
+}
+.our_team .our_team_people .social_icon .fa:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+/* Contact Us */
+.contact_us {
+    background: #f7f7f7;
+    width: 100%;
+    height: 100%;
+}
+.contact_us .contact_us_txt {
+    margin-top: 50px;
+}
+.contact_us .contact_details_message {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.contact_us .contact_details_message .contact_details {
+    color: #ff0000;
+}
+.contact_us .contact_details_message h3 {
+    margin-bottom: 25px;
+}
+.contact_details .marker, .contact_details .phone, .contact_details .envelope {
+    margin-top: 15px;
+}
+.contact_us .contact_details_message .contact_details p {
+    margin-top: -25px;
+    margin-left: 30px;
+}
+.contact_us .contact_details_message .contact_message .form_message {
+    margin-top: 25px;
+}
+.name_form, .email_form, .text_form, .submit_form {
+    text-transform: uppercase;
+    color: #919191;
+    font-size: 14px;
+    font-family: "OpenSansLight", sans-serif;
+}
+input, .text_form {
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+input:focus, .text_form:focus {
+    outline: 1px solid #ff0000;
+}
+.name_form {
+    height: 40px;
+    width: 47.4%;
+}
+.email_form {
+    margin-left: 25px;
+    height: 40px;
+    width: 47.4%;
+}
+.text_form {
+    width: 100%; /* Ширина поля в процентах */
+    height: 145px; /* Высота поля в пикселах */
+    resize: none; /* Запрещаем изменять размер */
+    margin-top: 20px;
+}
+.submit_form {
+    margin-top: 25px;
+    font-family: "OpenSansBold";
+    color: #ffffff;
+    font-size: 24px;
+    width: 200px;
+    height: 55px;
+    background: #ff0000;
+    border: none;
+    border-radius: 2px;
+}
+
+/* Footer */
+footer {
+    height: 55px;
+    width: 100%;
+    padding-top: 15px;
+}
+footer .copyright {
+    font-size: 16px;
+}
+footer .footer_social a {
+    color: #ff000f;
+}
+footer .footer_social {
+    margin-top: 5px;
+}
+footer .footer_social .fa {
+    padding: 0 5px;
+    transition: .5s;
+    font-size: 18px;
+}
+footer .footer_social .fa:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}

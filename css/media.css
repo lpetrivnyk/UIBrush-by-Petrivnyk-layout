@@ -9,21 +9,90 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
+    h2 {
+        font-size: 26px;
+    }
+    p {
+        font-size: 18px;
+    }
+
+
+    header .navigation .social {
+        font-size: 18px;
+    }
+    .our_history {
+        margin-bottom: 30px;
+    }
+    .our_history img {
+        margin-top: 125px;
+    }
+    .our_history .our_history_txt p {
+        margin-top: 10px;
+    }
+
+    .our_skills {
+        height: 100%;
+    }
+    .our_skills .progress_body {
+        margin-bottom: 40px;
+    }
+
+    .name_form {
+        width: 46.5%;
+    }
+    .email_form {
+        width: 46.5%;
+    }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+    hr {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        background-color: #ff000f;
+    }
+
+
 
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+    .name_form {
+        width: 45%;
+    }
+    .email_form {
+        width: 45%;
+        margin-left: 9%;
+    }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+    h2 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .our_team_people .social_icon {
+        font-size: 20px;
+    }
+    .contact_message {
+        text-align: center;
+    }
+    .name_form {
+        width: 100%;
+    }
+    .email_form {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0; 
+    }
+    footer .copyright {
+        font-size: 14px;
+    }
 }
 
 /* Custom, iPhone Retina */
